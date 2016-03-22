@@ -1,8 +1,6 @@
 PROJECT(test_ProcessPool)
-INCLUDE_DIRECTORIES(include)
-SET(SRC_LIST 
-	main.cpp
-	processpool/ProcessPool.cpp
-	)
-ADD_EXECUTABLE(haha ${SRC_LIST})
+SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
+add_subdirectory(src)
+MESSAGE(STATUS "This is BINARY dir" ${test_ProcessPool_BINARY_DIR})
+MESSAGE(STATUS "This is SOURCE dir" ${test_ProcessPool_SOURCE_DIR})
 
